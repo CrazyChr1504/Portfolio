@@ -5,9 +5,15 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     padding: 0.5rem;
     margin: 1rem 0;
-    border-radius: 12px;
-    background-color: #4b4b4b;
+    background-color: #AD9AD6;
   }
+
+.no-contact {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40%;
+  color: white;
+}
   
   .adress-item__description {
     display: flex;
@@ -18,13 +24,30 @@
     justify-content: flex-start;
     flex: 1;
   }
-  
+
+  .adress-avatar {
+    display: flex;
+    flex-direction: row;
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid #ececec;
+    border-radius: 10px;
+    background-color: #2a2a2a;
+    color: white;
+    align-items: center;
+    justify-content: center;
+  }
+  .image {
+    max-width: 70px;
+    max-height: 70px;
+    border-radius: 10px;
+  }
   .adress-item h2 {
     color: #3a3a3a;
     font-size: 1rem;
     flex: 1;
     margin: 0 1rem;
-    color: white;
+    color: rgb(70, 41, 84);
   }
 
   .adress-item h1 {
@@ -32,17 +55,21 @@
     font-size: 1rem;
     flex: 1;
     margin: 0 1rem;
-    color: white;
+    color: rgb(70, 41, 84);
   }
   
   .adress-item__number {
     font-size: 1rem;
     font-weight: bold;
-    color: white;
-    background-color: #40005d;
-    border: 1px solid white;
+    color: rgb(70, 41, 84);
+    background-color: #E4B7ED;
+    border: 1px solid black;
     padding: 0.5rem;
     border-radius: 12px;
+  }
+  .button {
+    border-radius: 10px;
+    border: 3px;
   }
   
   @media (min-width: 580px) {

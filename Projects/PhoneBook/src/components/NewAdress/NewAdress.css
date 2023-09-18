@@ -1,5 +1,5 @@
 .new-adress {
-    background-color: #92e9ee;
+    background-color: #AD9AD6;
     padding: 1rem;
     margin: 2rem auto;
     width: 50rem;
@@ -11,19 +11,20 @@
   
   .new-adress button {
     font: inherit;
+    
     cursor: pointer;
     padding: 1rem 2rem;
-    border: 1px solid #40005d;
-    background-color: #40005d;
-    color: white;
+    border: 1px solid #D9AC9A;
+    background-color: #D9AC9A;
+    color: black;
     border-radius: 12px;
     margin-right: 1rem;
   }
   
   .new-adress button:hover,
   .new-adress button:active {
-    background-color: #510674;
-    border-color: #510674;
+    background-color: #c1917e;
+    border-color: #c1917e;
   }
   
   .new-adress button.alternative {

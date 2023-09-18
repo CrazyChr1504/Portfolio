@@ -1,7 +1,10 @@
 import { useState } from "react";
 import "./AdressForm.css"
+import ElfImg from "../Images/Elf.png"
+import EdgeLordImg from "../Images/TokyoGhoul.png"
 
 function AdressForm(props) {
+
     const [userInput, setUserInput] = useState({
         enteredName:"",
         enteredNumber:"",
@@ -29,19 +32,41 @@ function AdressForm(props) {
     function submitHandler(event) {
         event.preventDefault();
 
-        const expenseData = {
+        let avatar = document.getElementById("Avatar")
+
+
+        if (avatar.value === "o2") {
+            avatar = ElfImg
+        }
+        else if (avatar.value === "o3") {
+            avatar = EdgeLordImg
+        }
+
+        const adressData = {
             name: userInput.enteredName,
             number: userInput.enteredNumber,
-            email: userInput.enteredEmail
+            email: userInput.enteredEmail,
+            avatar: avatar
         };
-        props.onSubmitedData(expenseData);
-        setUserInput( ()=>{
-            return{enteredName:"",
-            enteredNumber:"",
-            enteredEmail:""
-            }
-        })
-    
+        if (adressData.name === "" || adressData.number === "" || adressData.email === "" || avatar === null) {
+            setUserInput( ()=>{
+                return{
+                enteredName:"",
+                enteredNumber:"",
+                enteredEmail:""
+                }
+            
+            })
+        } else {
+            props.onSubmitedData(adressData);
+            setUserInput( ()=>{
+                return{
+                enteredName:"",
+                enteredNumber:"",
+                enteredEmail:""
+                }
+            })
+        }
     }
 
     return (
@@ -71,6 +96,11 @@ function AdressForm(props) {
                  onChange={emailChangeHandler}
                 />
             </div>
+            <select id="Avatar" className="custom-select">
+            <option value={null} selected="selected">Choose Avatar</option>
+            <option value={"o2"}>Elf</option>
+            <option value={"o3"}>Edge Lord</option>
+            </select>
         </div>
         <div className="new-adress__actions">
             <button type="sumbit">Add New Contact</button>

@@ -24,3 +24,9 @@
   .new-adress__actions {
     text-align: right;
   }
+  .custom-select {
+      border-radius: 6px;
+      border: solid 1px white;
+      margin-top: 4.2%;
+  
+  }
