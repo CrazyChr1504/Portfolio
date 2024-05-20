@@ -8,6 +8,7 @@ app.use(cors())
 app.use(express.json())
 
 function randomizeCode() {
+  // Generate a random 6 alphaNum code
   return code
 }
 const FACode = "NTI2FA"
