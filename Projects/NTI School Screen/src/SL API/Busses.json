@@ -8,7 +8,29 @@
         {
             "Line": "840",
             "Name": "Handens station",
-            "Time": "15:13"
+            "Time": "3 min"
+        },
+        {
+            "Line": "465",
+            "Name": "Fisks\u00e4tra",
+            "Time": "Now"
+        },
+        {
+            "Line": "71",
+            "Name": "Glasbruksgatan",
+            "Time": "Now"
+        }
+    ],
+    [
+        {
+            "Line": "443",
+            "Name": "Slussen",
+            "Time": "15:28"
+        },
+        {
+            "Line": "840",
+            "Name": "Handens station",
+            "Time": "15:28"
         },
         {
             "Line": "465",
@@ -25,28 +47,6 @@
         {
             "Line": "443",
             "Name": "Slussen",
-            "Time": "15:28"
-        },
-        {
-            "Line": "840",
-            "Name": "Handens station",
-            "Time": "15:28"
-        },
-        {
-            "Line": "465",
-            "Name": "Fisks\u00e4tra",
-            "Time": "15:26"
-        },
-        {
-            "Line": "71",
-            "Name": "Glasbruksgatan",
-            "Time": "15:53"
-        }
-    ],
-    [
-        {
-            "Line": "443",
-            "Name": "Slussen",
             "Time": "15:36"
         },
         {
@@ -57,12 +57,12 @@
         {
             "Line": "465",
             "Name": "Fisks\u00e4tra",
-            "Time": "15:36"
+            "Time": "15:26"
         },
         {
             "Line": "71",
             "Name": "Glasbruksgatan",
-            "Time": "16:13"
+            "Time": "15:53"
         }
     ]
 ]

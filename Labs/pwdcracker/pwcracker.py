@@ -1,6 +1,6 @@
 import string, time
 
-correct_password = f"{string.printable*100}"
+correct_password = f"{string.printable*100,000}"
 
 def timer(func):
     """This function is a decorator and is able to time how long a function took to run.\n
